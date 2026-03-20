@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OficinaConsole.Entities
+namespace OficinaConsole.src.Entities
 {
     public abstract class Veiculo
     {
