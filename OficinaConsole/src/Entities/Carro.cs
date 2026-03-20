@@ -7,7 +7,7 @@ namespace OficinaConsole.src.Entities
     public class Carro : Veiculo
     {
         public Carro() { }
-        public Carro(string modelo, string marca, int placa) : base(modelo, marca, placa)
+        public Carro(int anoFabricacao, string modelo, string marca, int placa) : base(anoFabricacao, modelo, marca, placa)
         {
         }
 

@@ -6,14 +6,16 @@ namespace OficinaConsole.src.Entities
 {
     public abstract class Veiculo
     {
+        public int AnoFabricacao { get; set; }
         public string Modelo { get; set; }
         public string Marca { get; set; }
         public int Placa { get; private set; }
 
         public Veiculo() { }
 
-        public Veiculo(string modelo, string marca, int placa)
+        public Veiculo(int anoFabricacao, string modelo, string marca, int placa)
         {
+            AnoFabricacao = anoFabricacao;
             Modelo = modelo;
             Marca = marca;
             Placa = placa;
