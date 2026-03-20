@@ -10,6 +10,12 @@ namespace OficinaConsole.src.Entities
 
         public double Salario { get; set; }
 
-        public 
+        public Mecanico (){ }
+
+        public Mecanico(string nome, double salario)
+        {
+            Nome = nome;
+            Salario = salario;
+        }
     }
 }

@@ -7,7 +7,7 @@ namespace OficinaConsole.src.Entities
     public class OrdemServico
     {
         public int Id { get; set; }
-        public Carro Carro { get; set; }
+        public Veiculo _veiculo { get; set; }
         public Mecanico Mecanico { get; set; }
         public List<Servico> Servicos { get; set; } = new List<Servico>();
         public double ValorServicoTotal { get; private set; }
@@ -16,10 +16,10 @@ namespace OficinaConsole.src.Entities
 
         public OrdemServico() { }
 
-        public OrdemServico(int id, Carro carro, Mecanico mecanico, List<Servico> servico)
+        public OrdemServico(int id, Veiculo veiculo, Mecanico mecanico, List<Servico> servico)
         {
             Id = id;
-            Carro = carro;
+            _veiculo = veiculo;
             Mecanico = mecanico;
             Servicos = servico;
         }
