@@ -20,23 +20,7 @@ namespace OficinaConsole.src.Entities
             Marca = marca;
             Placa = placa;
         }
+        public abstract string ObterDescricao();
     }
 }
 
-/*
-Veiculo (classe base abstrata)
-├── Carro
-└── Moto
-
-Mecanico (classe concreta)
-
-Servico (classe concreta)
-
-OrdemDeServico (classe concreta)
-└── usa: Veiculo, Mecanico, List<Servico>, IPagamento
-
-IPagamento (interface)
-├── PagamentoPix
-├── PagamentoCartao
-└── PagamentoDinheiro
-*/

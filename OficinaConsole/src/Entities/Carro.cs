@@ -11,5 +11,10 @@ namespace OficinaConsole.src.Entities
         {
         }
 
+        public override string ObterDescricao()
+        {
+            return $"Veiculo: {AnoFabricacao} - {Marca} {Modelo}";
+        }
+
     }
 }
