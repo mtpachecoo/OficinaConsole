@@ -10,7 +10,7 @@ namespace OficinaConsole.src.Entities
         public Veiculo Veiculo { get; set; }
         public Mecanico Mecanico { get; set; }
         public List<Servico> Servicos { get; set; } = new List<Servico>();
-        public List<Peca> pecas {get; set;} = new List<Peca>();
+        public List<Peca> Pecas {get; set;} = new List<Peca>();
         public double ValorServicoTotal { get; private set;}
         public double ValorTotal { get; set; }
 
